@@ -1,0 +1,29 @@
+current directory: /Users/chibana/rails_projects/chatman/vendor/bundle/ruby/2.3.0/gems/hiredis-0.6.1/ext/hiredis_ext
+/Users/chibana/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20160208-28983-1vvcmky.rb extconf.rb
+checking for sys/socket.h... yes
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  net.c
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  hiredis.c
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  sds.c
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  async.c
+cc -std=c99 -pedantic -c -O3 -fPIC  -Wall -W -Wstrict-prototypes -Wwrite-strings -g -ggdb  read.c
+ar rcs libhiredis.a net.o hiredis.o sds.o async.o read.o
+checking for rb_thread_fd_select()... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/chibana/rails_projects/chatman/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-14/2.3.0-static/hiredis-0.6.1/mkmf.log
+
+current directory: /Users/chibana/rails_projects/chatman/vendor/bundle/ruby/2.3.0/gems/hiredis-0.6.1/ext/hiredis_ext
+make "DESTDIR=" clean
+
+current directory: /Users/chibana/rails_projects/chatman/vendor/bundle/ruby/2.3.0/gems/hiredis-0.6.1/ext/hiredis_ext
+make "DESTDIR="
+compiling connection.c
+compiling hiredis_ext.c
+compiling reader.c
+linking shared-object hiredis/ext/hiredis_ext.bundle
+
+current directory: /Users/chibana/rails_projects/chatman/vendor/bundle/ruby/2.3.0/gems/hiredis-0.6.1/ext/hiredis_ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hiredis_ext.bundle ./.gem.20160208-28983-1gqi3gn/hiredis/ext
