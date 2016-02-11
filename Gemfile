@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'websocket-rails'
+gem 'faye-websocket', '0.10.0'
 gem 'slim-rails'
 gem 'therubyracer'
 gem 'less-rails'
@@ -41,6 +42,8 @@ gem 'twitter-bootstrap-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-doc'
 end
 
 group :development do
