@@ -1,6 +1,16 @@
 h1 Chat#index
 ul#chat_area data-uri="#{request.host}:3001/websocket"
 
-input#comment type="text"
-input#send type="button" value="send"
+.form-horizontal
+  .form-group
+    label.control-label.col-xs-2 name
+    .col-xs-10
+      input#name type='text'
+
+  .form-group
+    label.control-label.col-xs-2 comment
+    .col-xs-10
+      input#comment type='text'
+  
+  input#send type='button' value='send'
 

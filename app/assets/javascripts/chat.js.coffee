@@ -10,13 +10,16 @@ class @ChatClass
     console.log('*****')
 
   sendMessage: (event) =>
+    console.log 'sendMessage'
+    msgName = $('#name').val()
     msgBody = $('#comment').val()
-    @dispatcher.trigger 'new_message', { body: msgBody }
+    @dispatcher.trigger 'new_message', { name: msgName, body: msgBody }
     $('#comment').val('')
 
   receiveMessage: (message) =>
     console.log message
-    message_li = $('<li>').text(message.body)
+    parsed_message = "#{message.name}: #{message.body}"
+    message_li = $('<li>').text(parsed_message)
     $('#chat_area').append(message_li)
 
 $ ->
