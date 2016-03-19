@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'chatview#index'
+  get 'home/index'
+
+  devise_for :users
+  root to: 'home#index'
   get 'chatview/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
