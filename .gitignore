@@ -85,3 +85,5 @@ doc/
 .DS_Store
 .idea
 .secret
+
+/dump.rdb
