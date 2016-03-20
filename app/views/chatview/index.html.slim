@@ -1,16 +1,17 @@
 h1 Chat#index
 ul#chat_area data-uri="#{request.host}:3001/websocket"
 
-.form-horizontal
-  .form-group.label-floating
-    label.control-label.col-xs-2 for="name" name
-    .col-xs-10
-      input#name.form-control type='text' placeholder='name'
-
-  .form-group
-    label.control-label.col-xs-2 for='comment' comment
-    .col-xs-10
-      input#comment.form-control type='text' placeholder='comment'
+.well
+  .form-horizontal
+    .form-group.label-floating
+      label.control-label.col-xs-2 for="name" name
+      .col-xs-10
+        input#name.form-control type='text' placeholder='name'
   
-  input#send type='button' value='send'
+    .form-group
+      label.control-label.col-xs-2 for='comment' comment
+      .col-xs-10
+        input#comment.form-control type='text' placeholder='comment'
+    
+    button#send.btn.btn-primary type='submit' send
 
